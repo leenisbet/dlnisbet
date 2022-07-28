@@ -1,0 +1,85 @@
+    /* This file is organized as follows:
+                FONTS
+                COLORS
+                STRUCTURE
+            */
+
+            /* FONTS */
+            header,
+
+          nav,
+
+          article,
+
+          aside,
+
+          footer {
+
+            background: white;
+
+            border-radius: 5px;
+
+            color: black;
+
+            font-family: 'Barlow', sans-serif;
+
+            font-size: 18px;
+
+            text-align: left;
+
+            padding: 15px;
+
+            margin-bottom: 0px;
+
+          }
+            /* COLORS */
+
+            /* STRUCTURE */   
+
+            h2{
+                color: dimgray;
+            }
+            
+            h3{
+                line-height: 0.5; font-weight: 900px; color: black;
+            }
+            section{
+                line-height: 1.5; padding-bottom: 2rem;
+            }
+            
+            nav ul {
+                display: flex;
+                list-style: none;
+              }
+
+            .breadcrumb {
+                display: flex;
+                list-style: none;
+            }
+
+            .breadcrumb li {
+                padding: 10px;
+              }
+            
+              .breadcrumb li:after {
+                content: '/';
+                margin-left: 20px
+              }
+            
+              .breadcrumb li:last-child:after {
+                content: '';
+              }
+
+              .breadcrumb a {
+                color: black;
+                text-decoration: none;
+              }
+              
+              .breadcrumb a:hover {
+                text-decoration: underline;
+              }
+
+            #SkillsList {
+                list-style: none;
+                text-align: left
+              }
