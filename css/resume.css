@@ -5,25 +5,22 @@
             */
 
 /* FONTS */
-            header,
-
+          header,
           nav,
-
           article,
-
           aside,
-
+          figure,
           footer {
 
             background: white;
 
-            border-radius: 5px;
+            border-radius: 15px;
 
             color: black;
 
             font-family: 'Barlow', sans-serif;
 
-            font-size: 18px;
+            font-size: 14px;
 
             text-align: left;
 
@@ -32,20 +29,31 @@
             margin-bottom: 0px;
 
           }
+          h3{
+            line-height: 1; font-weight: 900px;
+        }
+        
+
 /* COLORS */
 
-
+            h2{
+              color: dimgray;
+              border-bottom: 4px solid dimgray
+            }
 
 
 
 /* STRUCTURE */   
-
-            h2{
-                color: dimgray;
+         
+            article{
+              float: left;
+              width: 500px;
+              margin: 10px;
             }
-            
-            h3{
-                line-height: 0.5; font-weight: 900px; color: black;
+            aside {
+              float: left;
+              width: 500px;
+              margin: 10px;
             }
             section{
                 line-height: 1.5; padding-bottom: 2rem;
@@ -90,3 +98,55 @@
               }
 
   /* form structure */
+            
+            
+            label {
+            
+              font-size: 20px;
+            
+            }
+            
+            div {
+            
+              margin-bottom: 30px;
+            
+            }
+            
+            input,
+            
+            textarea {
+            
+              border: 0;
+            
+              border-bottom: 1px solid gray;
+            
+              padding: 10px 0;
+            
+              width: 300px;
+            
+            }
+    
+  /* artworks structure */
+            
+            .entry{
+              width: 220px;
+              float: left;
+              margin: 10px;
+              height: 198px;
+            }
+            figure{
+              display: block;
+              width: 202px;
+              height: 170px;
+              margin: 0px;
+              padding: 9px;
+              text-align: left;
+            }
+              figure img{
+                width: 200px;
+                height: 150px;
+                border: 1px solid white;
+              }
+              figcaption{
+                padding-left: 20px;
+              }
