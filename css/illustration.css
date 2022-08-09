@@ -1,0 +1,19 @@
+
+*{
+    min-height: 100%;
+    margin: auto
+    width: 50%
+    border: 3px solid black;
+    padding: 10px
+}
+
+.star{
+background-color: gold;
+}
+
+.star_outer{
+height: 60px;
+width: 60px;
+border-top-left-radius: 10px ;
+border-top-right-radius: 10px;
+}

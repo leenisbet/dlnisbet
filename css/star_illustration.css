@@ -1,0 +1,41 @@
+/* To change size of star, do not adjust height, width, and transform rotate */
+
+#star-five-lg {
+        margin: 250px;
+        position: relative;
+        display: block;
+        color: red;
+        width: 0px;
+        height: 0px;
+        border-right: 400px solid transparent;
+        border-bottom: 280px solid red;
+        border-left: 400px solid transparent;
+        transform: rotate(35deg);
+}
+#star-five-lg:before {
+        border-bottom: 320px solid red;
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        position: absolute;
+        height: 0;
+        width: 0;
+        top: -180px;
+        left: -260px;
+        display: block;
+        content: '';
+        transform: rotate(-35deg);
+}
+#star-five-lg:after {
+        position: absolute;
+        display: block;
+        color: red;
+        top: 12px;
+        left: -420px;
+        width: 0px;
+        height: 0px;
+        border-right: 400px solid transparent;
+        border-bottom: 280px solid red;
+        border-left: 400px solid transparent;
+        transform: rotate(-70deg);
+        content: '';
+}

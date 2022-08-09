@@ -127,7 +127,9 @@
             }
     
   /* artworks structure */
-            
+            .toppicture{
+              float: left
+            }
             .entry{
               width: 220px;
               float: left;
