@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="robots" content="nofollow">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Lee Nisbet Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow&display=swap" rel="stylesheet">
+        <link href="/css/resume.css" rel="stylesheet"> 
+    </head>
+
+   <body>
+        <h1>LEE NISBET</h1>
+    
+    <!-- LINKS TO WEBPAGE SECTIONS -->
+    <nav>
+        <ol class="breadcrumb">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="artwork.html">Photography</a></li>
+            <li><a href="resume.html">CV</a></li>
+            <li><a href="form.html">Contact</a></li>
+        </ol>
+    </nav>
+    <main>
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="LN_MergingNightdrives30.jpg" style="width:100%">
+        <div class="text">#merging #nightdrives 30</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="LN_MergingNightdrives26.jpg" style="width:100%">
+        <div class="text">#merging #nightdrives 26</div>
+        </div>
+
+        <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="LN_MergingNightdrives25.jpg" style="width:100%">
+        <div class="text">#merging #nightdrives 25</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+
+       <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+        showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+        showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+       </script>
+       
+        <h2>#merging #nightdrives</h2>
+        <article>
+            In the <i>#merging #nightdrives</i> series, I explore the evening landscape from a moving vehicle. 
+            I aim to capture the ephemeral lights of a world I am only passing through. Shooting through car windows allows for the 
+            exploration of the world while simultaneously creating physical isolation from the confines of a machine. 
+            <br>
+            <br>
+            As with the lights experienced during night drives, I am also drawn to the consistent flow and fading glow of social media. 
+            Embracing hyperreality, carefully-curated social media profiles display distorted windows into our lives. My process is 
+            intentionally limited to camera apps and social media filters as tools of distortion much in the same way that social 
+            media misrepresents our lives by creating a manufactured window on reality. The resulting physical print of my work on 
+            gallery walls subverts the intention of images created for a digital world. 
+        </article>
+    </main> 
+    </body>
+</html>

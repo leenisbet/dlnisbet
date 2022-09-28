@@ -54,6 +54,7 @@
 }
 #star-five-med:before {
     border-bottom: 220px solid orange;
+    
     border-left: 120px solid transparent;
     border-right: 120px solid transparent;
     position: absolute;
